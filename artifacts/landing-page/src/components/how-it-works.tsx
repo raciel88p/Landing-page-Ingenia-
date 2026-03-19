@@ -21,9 +21,9 @@ export function HowItWorks() {
   ];
 
   return (
-    <section id="opportunity" className="py-24 bg-primary text-white relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-secondary/20 rounded-full blur-[100px]" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-accent/20 rounded-full blur-[100px]" />
+    <section id="opportunity" className="py-24 bg-gray-50 relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px]" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-accent/10 rounded-full blur-[120px]" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-4xl mx-auto mb-20">
@@ -31,14 +31,14 @@ export function HowItWorks() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6"
+            className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 text-primary"
           >
             Las empresas que invierten en uniformes funcionales logran:
           </motion.h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-12 relative">
-          <div className="hidden md:block absolute top-12 left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-secondary/10 via-secondary/50 to-accent/10" />
+          <div className="hidden md:block absolute top-12 left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-primary/10 via-primary/30 to-accent/20" />
 
           {benefits.map((benefit, index) => (
             <motion.div
@@ -49,12 +49,12 @@ export function HowItWorks() {
               transition={{ delay: index * 0.2, duration: 0.5 }}
               className="relative flex flex-col items-center text-center"
             >
-              <div className="w-24 h-24 rounded-full bg-white/10 border border-white/20 backdrop-blur-md flex items-center justify-center mb-8 relative z-10 shadow-xl">
+              <div className="w-24 h-24 rounded-full bg-white border border-gray-200 flex items-center justify-center mb-8 relative z-10 shadow-md">
                 {benefit.icon}
               </div>
               
-              <h3 className="text-2xl font-bold mb-4">{benefit.title}</h3>
-              <p className="text-white/80 leading-relaxed max-w-sm">
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">{benefit.title}</h3>
+              <p className="text-gray-600 leading-relaxed max-w-sm">
                 {benefit.description}
               </p>
             </motion.div>
