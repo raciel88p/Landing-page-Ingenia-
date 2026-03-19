@@ -46,7 +46,7 @@ export function Pricing() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto items-stretch">
           {impacts.map((impact, index) => (
             <motion.div
               key={index}
@@ -54,7 +54,7 @@ export function Pricing() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.4 }}
-              className="bg-muted/20 p-8 rounded-3xl border border-border text-center flex flex-col items-center justify-center"
+              className="bg-muted/20 p-8 rounded-3xl border border-border text-center flex flex-col items-center justify-center h-full"
             >
               <div className={`w-12 h-12 rounded-full mb-4 flex items-center justify-center ${impact.trend === 'up' ? 'bg-secondary/10 text-secondary' : 'bg-accent/10 text-accent'}`}>
                 {impact.trend === 'up' ? <ArrowUpRight size={24} /> : <TrendingDown size={24} />}
