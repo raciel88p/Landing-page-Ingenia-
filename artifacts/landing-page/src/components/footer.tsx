@@ -11,7 +11,7 @@ export function Footer() {
                 <Shirt size={24} strokeWidth={2} />
               </div>
               <span className="font-display font-bold text-2xl tracking-tight text-primary">
-                Madia Creaciones
+                Ingenia
               </span>
             </a>
             <p className="text-muted-foreground max-w-sm mb-6">
@@ -50,7 +50,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
                 <Mail size={20} className="text-accent shrink-0" />
-                <span>ventas@madiacreaciones.cr</span>
+                <span>ventas@ingenia.cr</span>
               </li>
             </ul>
           </div>
@@ -58,7 +58,7 @@ export function Footer() {
         
         <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Madia Creaciones. Todos los derechos reservados.
+            © {new Date().getFullYear()} Ingenia. Todos los derechos reservados.
           </p>
         </div>
       </div>

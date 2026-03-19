@@ -38,7 +38,7 @@ export function Navbar() {
               <Shirt size={24} strokeWidth={2} />
             </div>
             <span className="font-display font-bold text-2xl tracking-tight text-primary">
-              Madia Creaciones
+              Ingenia
             </span>
           </a>
 
