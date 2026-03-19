@@ -1,4 +1,4 @@
-import { Shirt, Instagram, Facebook, MapPin, Mail, Phone } from "lucide-react";
+import { Instagram, Facebook, MapPin, Mail, Phone } from "lucide-react";
 
 export function Footer() {
   return (
@@ -7,9 +7,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
             <a href="#" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white">
-                <Shirt size={24} strokeWidth={2} />
-              </div>
+              <img
+                src={`${import.meta.env.BASE_URL}images/logo-ingenia.png`}
+                alt="Ingenia logo"
+                className="h-10 w-10 object-contain"
+              />
               <span className="font-display font-bold text-2xl tracking-tight text-primary">
                 Ingenia
               </span>

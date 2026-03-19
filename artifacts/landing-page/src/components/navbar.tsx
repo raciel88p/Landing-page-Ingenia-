@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Shirt } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function Navbar() {
@@ -34,9 +34,11 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white shadow-lg shadow-primary/30 group-hover:scale-105 transition-transform duration-300">
-              <Shirt size={24} strokeWidth={2} />
-            </div>
+            <img
+              src={`${import.meta.env.BASE_URL}images/logo-ingenia.png`}
+              alt="Ingenia logo"
+              className="h-10 w-10 object-contain group-hover:scale-105 transition-transform duration-300"
+            />
             <span className="font-display font-bold text-2xl tracking-tight text-primary">
               Ingenia
             </span>
