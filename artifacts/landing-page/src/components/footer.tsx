@@ -44,7 +44,7 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-muted-foreground">
                 <MapPin size={20} className="text-accent shrink-0" />
-                <span>San José, Costa Rica.<br/>Envíos a todo el país.</span>
+                <span>Heredia, San Rafael, Concepción.<br/>Envíos a todo el país.</span>
               </li>
               <li className="flex items-center gap-3 text-muted-foreground">
                 <Phone size={20} className="text-accent shrink-0" />
