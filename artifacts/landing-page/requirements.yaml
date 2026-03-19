@@ -1,0 +1,21 @@
+packages:
+  "framer-motion": "For highly polished scroll-triggered animations and entry effects"
+  "lucide-react": "For modern, consistent iconography throughout the landing page"
+
+images:
+  - path: "artifacts/landing-page/public/images/hero-dashboard.png"
+    description: "A glowing, highly stylized abstract marketing dashboard with 3D charts, upward trending graphs, and neon glowing lines, modern startup 3D illustration style, vibrant purple and cyan colors on a clean background"
+    aspect_ratio: "16:9"
+  - path: "artifacts/landing-page/public/images/avatar-1.png"
+    description: "Professional headshot of a smiling young Latina woman, modern vibrant gradient background, high quality, soft studio lighting"
+    aspect_ratio: "1:1"
+  - path: "artifacts/landing-page/public/images/avatar-2.png"
+    description: "Professional headshot of a smiling young Latino man in a smart casual shirt, bright modern gradient background, high quality, soft studio lighting"
+    aspect_ratio: "1:1"
+  - path: "artifacts/landing-page/public/images/avatar-3.png"
+    description: "Professional headshot of a confident mature Latina businesswoman, modern vibrant gradient background, high quality, soft studio lighting"
+    aspect_ratio: "1:1"
+
+notes:
+  - This is a pure frontend marketing landing page, no backend connections required.
+  - Using smooth scroll anchors for internal navigation.
