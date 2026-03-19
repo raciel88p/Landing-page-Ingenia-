@@ -61,14 +61,16 @@ export function FinalCTA() {
                 rows={3}
                 className="w-full px-4 py-3 rounded-md bg-white text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent resize-none"
               />
-              <button 
-                type="submit"
+              <a
+                href="https://wa.me/50689437109?text=En%20Ingenia%20es%20un%20gusto%20atenderle."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full py-4 rounded-md font-bold text-lg bg-accent text-white shadow-lg hover:shadow-accent/40 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group mt-4"
               >
                 <Send size={20} />
                 Mejorar la imagen de mi equipo
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
-              </button>
+              </a>
             </form>
           </div>
         </motion.div>
