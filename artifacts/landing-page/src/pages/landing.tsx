@@ -8,6 +8,7 @@ import { Pricing } from "@/components/pricing"; // Impact stats
 import { FAQ } from "@/components/faq";
 import { FinalCTA } from "@/components/final-cta";
 import { Footer } from "@/components/footer";
+import { Gallery } from "@/components/gallery";
 
 export default function LandingPage() {
   return (
@@ -15,6 +16,7 @@ export default function LandingPage() {
       <Navbar />
       <main>
         <Hero />
+        <Gallery />
         <SocialProof />
         <HowItWorks />
         <Features />
