@@ -46,7 +46,7 @@ export function Pricing() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
           {impacts.map((impact, index) => (
             <motion.div
               key={index}
