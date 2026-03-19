@@ -1,36 +1,53 @@
 import { motion } from "framer-motion";
+import { AlertCircle, ThermometerSun, Users, DollarSign } from "lucide-react";
 
 export function SocialProof() {
-  const stats = [
-    { value: "500+", label: "Clientes Activos" },
-    { value: "$50M+", label: "Ventas Generadas" },
-    { value: "98%", label: "Tasa de Retención" },
-    { value: "3.5x", label: "ROI Promedio" },
+  const problems = [
+    {
+      icon: <ThermometerSun className="text-destructive w-8 h-8" />,
+      title: "Clima Cálido",
+      description: "Incomodidad y baja productividad en operaciones de campo debido a telas no transpirables."
+    },
+    {
+      icon: <Users className="text-destructive w-8 h-8" />,
+      title: "Uniformes Genéricos",
+      description: "Débil percepción de marca y falta de diferenciación frente a la competencia."
+    },
+    {
+      icon: <DollarSign className="text-destructive w-8 h-8" />,
+      title: "Baja Durabilidad",
+      description: "Desgaste rápido que genera costos recurrentes e innecesarios de reposición."
+    }
   ];
 
   return (
-    <section className="py-12 border-y border-border bg-muted/30">
+    <section id="problem" className="py-20 bg-white border-b border-border/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="text-center text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-8">
-          Con la confianza de empresas de alto crecimiento
-        </p>
-        
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center">
-          {stats.map((stat, index) => (
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-destructive/10 text-destructive text-sm font-semibold mb-4">
+            <AlertCircle size={16} />
+            El Problema Actual
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+            ¿Su equipo enfrenta estos desafíos?
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {problems.map((problem, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1, duration: 0.5 }}
-              className="flex flex-col items-center justify-center space-y-1"
+              transition={{ delay: index * 0.1 }}
+              className="p-8 rounded-2xl bg-muted/30 border border-border/50 text-center hover:shadow-lg transition-shadow duration-300"
             >
-              <span className="text-3xl md:text-4xl font-display font-extrabold text-foreground">
-                {stat.value}
-              </span>
-              <span className="text-sm md:text-base font-medium text-muted-foreground">
-                {stat.label}
-              </span>
+              <div className="mx-auto w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center mb-6">
+                {problem.icon}
+              </div>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">{problem.title}</h3>
+              <p className="text-muted-foreground">{problem.description}</p>
             </motion.div>
           ))}
         </div>

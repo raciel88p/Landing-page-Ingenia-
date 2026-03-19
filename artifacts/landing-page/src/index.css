@@ -40,31 +40,31 @@
 }
 
 :root {
-  /* Modern Startup Vibrant Palette */
-  --background: 0 0% 100%;
-  --foreground: 230 35% 12%;
+  /* Deep Navy, Warm White, Forest Green, Warm Orange */
+  --background: 40 33% 98%; /* Warm White */
+  --foreground: 222 47% 11%; /* Deep Navy */
   
-  /* Electric Indigo */
-  --primary: 250 85% 55%;
+  /* Deep Navy Blue */
+  --primary: 222 47% 20%;
   --primary-foreground: 0 0% 100%;
   
-  /* Neon Cyan */
-  --secondary: 190 90% 50%;
-  --secondary-foreground: 230 35% 12%;
+  /* Forest Green */
+  --secondary: 142 40% 30%;
+  --secondary-foreground: 0 0% 100%;
   
-  /* Vibrant Pink/Coral */
-  --accent: 330 85% 60%;
+  /* Warm Orange Accent */
+  --accent: 24 95% 55%;
   --accent-foreground: 0 0% 100%;
   
-  --muted: 220 20% 96%;
-  --muted-foreground: 230 20% 45%;
+  --muted: 210 20% 90%;
+  --muted-foreground: 215 16% 47%;
   
   --card: 0 0% 100%;
-  --card-foreground: 230 35% 12%;
+  --card-foreground: 222 47% 11%;
   
-  --border: 220 15% 90%;
-  --input: 220 15% 90%;
-  --ring: 250 85% 55%;
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --ring: 222 47% 20%;
   
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
@@ -93,7 +93,7 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary via-accent to-secondary;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
   }
   
   .glass-card {

@@ -1,4 +1,4 @@
-import { Target, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Shirt, Instagram, Facebook, MapPin, Mail, Phone } from "lucide-react";
 
 export function Footer() {
   return (
@@ -7,56 +7,59 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
             <a href="#" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center text-white">
-                <Target size={20} strokeWidth={2.5} />
+              <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white">
+                <Shirt size={24} strokeWidth={2} />
               </div>
-              <span className="font-display font-bold text-xl tracking-tight">
-                AdsPro<span className="text-primary">.</span>
+              <span className="font-display font-bold text-2xl tracking-tight text-primary">
+                Madia Creaciones
               </span>
             </a>
             <p className="text-muted-foreground max-w-sm mb-6">
-              Agencia de performance marketing especializada en Google Ads. Transformamos tu inversión publicitaria en ventas medibles y escalables.
+              Especialistas en la confección y personalización de camisas tipo Columbia para empresas en Costa Rica. Elevamos su imagen corporativa.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-primary hover:text-white transition-colors">
+              <a href="#" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-primary hover:bg-accent hover:text-white transition-colors">
+                <Facebook size={18} />
+              </a>
+              <a href="#" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-primary hover:bg-accent hover:text-white transition-colors">
                 <Instagram size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-primary hover:text-white transition-colors">
-                <Linkedin size={18} />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-foreground hover:bg-primary hover:text-white transition-colors">
-                <Twitter size={18} />
               </a>
             </div>
           </div>
           
           <div>
-            <h4 className="font-bold text-foreground mb-4">Navegación</h4>
+            <h4 className="font-bold text-primary mb-4">Navegación</h4>
             <ul className="space-y-3">
-              <li><a href="#features" className="text-muted-foreground hover:text-primary transition-colors">Beneficios</a></li>
-              <li><a href="#how-it-works" className="text-muted-foreground hover:text-primary transition-colors">Metodología</a></li>
-              <li><a href="#testimonials" className="text-muted-foreground hover:text-primary transition-colors">Testimonios</a></li>
-              <li><a href="#pricing" className="text-muted-foreground hover:text-primary transition-colors">Precios</a></li>
+              <li><a href="#problem" className="text-muted-foreground hover:text-accent transition-colors">Desafíos</a></li>
+              <li><a href="#features" className="text-muted-foreground hover:text-accent transition-colors">Características</a></li>
+              <li><a href="#use-cases" className="text-muted-foreground hover:text-accent transition-colors">Sectores</a></li>
+              <li><a href="#faq" className="text-muted-foreground hover:text-accent transition-colors">Preguntas Frecuentes</a></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="font-bold text-foreground mb-4">Legal</h4>
-            <ul className="space-y-3">
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Términos de Servicio</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Política de Privacidad</a></li>
-              <li><a href="#" className="text-muted-foreground hover:text-primary transition-colors">Aviso Legal</a></li>
+            <h4 className="font-bold text-primary mb-4">Contacto</h4>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3 text-muted-foreground">
+                <MapPin size={20} className="text-accent shrink-0" />
+                <span>San José, Costa Rica.<br/>Envíos a todo el país.</span>
+              </li>
+              <li className="flex items-center gap-3 text-muted-foreground">
+                <Phone size={20} className="text-accent shrink-0" />
+                <span>+506 8000-0000</span>
+              </li>
+              <li className="flex items-center gap-3 text-muted-foreground">
+                <Mail size={20} className="text-accent shrink-0" />
+                <span>ventas@madiacreaciones.cr</span>
+              </li>
             </ul>
           </div>
         </div>
         
-        <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} AdsPro Digital. Todos los derechos reservados.
+            © {new Date().getFullYear()} Madia Creaciones. Todos los derechos reservados.
           </p>
-          <div className="flex gap-6 text-sm text-muted-foreground">
-            <span>Hecho con ♥ para tu crecimiento</span>
-          </div>
         </div>
       </div>
     </footer>

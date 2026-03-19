@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Target } from "lucide-react";
+import { Menu, X, Shirt } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export function Navbar() {
@@ -15,10 +15,10 @@ export function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Beneficios", href: "#features" },
-    { name: "Cómo Funciona", href: "#how-it-works" },
-    { name: "Testimonios", href: "#testimonials" },
-    { name: "Precios", href: "#pricing" },
+    { name: "Desafíos", href: "#problem" },
+    { name: "Beneficios", href: "#opportunity" },
+    { name: "Características", href: "#features" },
+    { name: "Sectores", href: "#use-cases" },
     { name: "FAQ", href: "#faq" },
   ];
 
@@ -26,7 +26,7 @@ export function Navbar() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/80 backdrop-blur-lg shadow-sm py-3"
+          ? "bg-white/90 backdrop-blur-lg shadow-sm py-3"
           : "bg-transparent py-5"
       }`}
     >
@@ -34,11 +34,11 @@ export function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center text-white shadow-lg shadow-primary/30 group-hover:scale-105 transition-transform duration-300">
-              <Target size={24} strokeWidth={2.5} />
+            <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white shadow-lg shadow-primary/30 group-hover:scale-105 transition-transform duration-300">
+              <Shirt size={24} strokeWidth={2} />
             </div>
-            <span className="font-display font-bold text-2xl tracking-tight">
-              AdsPro<span className="text-primary">.</span>
+            <span className="font-display font-bold text-2xl tracking-tight text-primary">
+              Madia Creaciones
             </span>
           </a>
 
@@ -48,7 +48,7 @@ export function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors duration-200"
+                className="text-sm font-medium text-foreground/80 hover:text-accent transition-colors duration-200"
               >
                 {link.name}
               </a>
@@ -59,9 +59,9 @@ export function Navbar() {
           <div className="hidden md:flex">
             <a
               href="#contact"
-              className="px-6 py-2.5 rounded-full font-semibold text-sm bg-foreground text-background hover:bg-primary hover:text-white hover:shadow-lg hover:shadow-primary/25 transition-all duration-300 hover:-translate-y-0.5"
+              className="px-6 py-2.5 rounded-md font-semibold text-sm bg-accent text-white hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/25 transition-all duration-300 hover:-translate-y-0.5"
             >
-              Comenzar Ahora
+              Solicitar Cotización
             </a>
           </div>
 
@@ -90,7 +90,7 @@ export function Navbar() {
                   key={link.name}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-base font-medium text-foreground/80 hover:text-primary py-2"
+                  className="text-base font-medium text-foreground/80 hover:text-accent py-2"
                 >
                   {link.name}
                 </a>
@@ -99,9 +99,9 @@ export function Navbar() {
                 <a
                   href="#contact"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="block w-full text-center px-6 py-3 rounded-xl font-semibold bg-primary text-white shadow-lg shadow-primary/25"
+                  className="block w-full text-center px-6 py-3 rounded-md font-semibold bg-accent text-white shadow-lg shadow-accent/25"
                 >
-                  Comenzar Ahora
+                  Solicitar Cotización
                 </a>
               </div>
             </div>
