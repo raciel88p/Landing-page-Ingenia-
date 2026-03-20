@@ -18,7 +18,7 @@ export function FAQ() {
     },
     {
       question: "¿Cuánto tiempo tarda la producción?",
-      answer: "El tiempo estimado es de entre 7 y 15 días hábiles, dependiendo de la cantidad solicitada y el nivel de personalización (bordados) requerido para su pedido."
+      answer: "El tiempo estimado es de 30 días hábiles, dependiendo de la cantidad solicitada y el nivel de personalización (bordados) requerido para su pedido."
     },
     {
       question: "¿Hacen entregas fuera del GAM?",
