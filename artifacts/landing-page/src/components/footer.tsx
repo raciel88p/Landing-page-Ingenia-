@@ -20,7 +20,7 @@ export function Footer() {
               Especialistas en la confección y personalización de camisas tipo Columbia para empresas en Costa Rica. Elevamos su imagen corporativa.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-primary hover:bg-accent hover:text-white transition-colors">
+              <a href="https://www.facebook.com/UniformesIngeniacr" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-primary hover:bg-accent hover:text-white transition-colors">
                 <Facebook size={18} />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-muted flex items-center justify-center text-primary hover:bg-accent hover:text-white transition-colors">
