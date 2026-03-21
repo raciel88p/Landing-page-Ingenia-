@@ -58,6 +58,8 @@ export function Gallery() {
               <img
                 src={`${import.meta.env.BASE_URL}images/${img.src}`}
                 alt={img.label}
+                loading="lazy"
+                decoding="async"
                 className="w-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/40 transition-colors duration-300 flex items-end p-3">

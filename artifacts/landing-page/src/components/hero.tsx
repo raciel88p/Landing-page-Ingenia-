@@ -54,7 +54,7 @@ export function Hero() {
           <div className="absolute inset-0 bg-secondary/20 rounded-3xl -rotate-6 scale-105 z-0"></div>
           <div className="rounded-3xl border border-border shadow-2xl overflow-hidden relative z-10 bg-white">
             <img 
-              src={`${import.meta.env.BASE_URL}images/hero-shirt.png`} 
+              src={`${import.meta.env.BASE_URL}images/hero-shirt.jpeg`} 
               alt="Profesional con camisa corporativa en Costa Rica" 
               className="w-full h-auto object-cover aspect-[4/3]"
             />
