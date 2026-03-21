@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite --config vite.config.ts --host 0.0.0.0",
-    "build": "pnpm build:client && pnpm build:server",
+    "build": "pnpm build:client && pnpm build:server && pnpm prerender",
     "build:client": "vite build --config vite.config.ts",
     "build:server": "vite build --config vite.config.ts --ssr src/entry-server.tsx --outDir dist/server",
+    "prerender": "tsx prerender.ts",
     "serve": "NODE_ENV=production tsx server.ts",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },

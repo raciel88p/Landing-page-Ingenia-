@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pnpm --filter @workspace/landing-page run build:client",
+  "buildCommand": "pnpm --filter @workspace/landing-page run build",
   "outputDirectory": "artifacts/landing-page/dist/client",
   "installCommand": "pnpm install",
   "framework": null,
