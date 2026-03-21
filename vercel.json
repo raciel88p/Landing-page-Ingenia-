@@ -1,7 +1,7 @@
 {
   "buildCommand": "pnpm --filter @workspace/landing-page run build:client",
   "outputDirectory": "artifacts/landing-page/dist/client",
-  "installCommand": "pnpm install --frozen-lockfile",
+  "installCommand": "pnpm install",
   "framework": null,
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
