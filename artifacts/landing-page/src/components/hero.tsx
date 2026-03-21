@@ -27,6 +27,7 @@ export function Hero() {
 
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <a
+              id="cta-hero"
               href="https://wa.me/50689437109?text=En%20Ingenia%20es%20un%20gusto%20atenderle."
               target="_blank"
               rel="noopener noreferrer"
