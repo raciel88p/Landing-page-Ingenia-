@@ -1,0 +1,9 @@
+{
+  "buildCommand": "cd artifacts/landing-page && pnpm install && pnpm build:client",
+  "outputDirectory": "artifacts/landing-page/dist/client",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
