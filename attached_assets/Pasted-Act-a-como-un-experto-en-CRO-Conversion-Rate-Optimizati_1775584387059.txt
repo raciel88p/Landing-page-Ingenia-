@@ -1,0 +1,198 @@
+Actúa como un experto en CRO (Conversion Rate Optimization), UX/UI, Copywriting persuasivo y desarrollo frontend con Next.js.
+
+Tu tarea es rediseñar completamente la landing page principal basada en https://ingeniacr.com, enfocándote en convertir visitantes en leads.
+
+La landing actual tiene problemas de conversión: no tiene un CTA fuerte, no genera urgencia, no tiene prueba social clara y no guía al usuario a tomar acción.
+
+---
+
+# 🎯 OBJETIVO PRINCIPAL
+
+Crear una landing page optimizada para:
+
+- Generar leads (formularios + WhatsApp)
+- Convertir tráfico pago (Google Ads / Meta)
+- Cargar rápido (<2 segundos)
+- Ser clara, directa y persuasiva
+
+---
+
+# 🧱 ESTRUCTURA DE LA LANDING (OBLIGATORIO)
+
+## 1. HERO (Above the fold)
+
+Debe incluir:
+
+- Headline claro y orientado a resultado:
+  “Desarrollamos soluciones digitales que aumentan tus ventas”
+
+- Subheadline:
+  Explicación breve del valor
+
+- CTA principal (botón grande):
+  “Cotiza tu proyecto ahora”
+
+- CTA secundario:
+  “Hablar por WhatsApp”
+
+- Imagen o mockup profesional
+
+---
+
+## 2. PRUEBA SOCIAL
+
+Agregar:
+
+- Testimonios (3 mínimo)
+- Resultados concretos (ej: “+120 proyectos entregados”)
+- Logos de clientes (si no hay, usar placeholders)
+
+---
+
+## 3. SERVICIOS (CLARO Y SIMPLE)
+
+Mostrar 3–5 servicios principales:
+
+- Desarrollo web
+- Software a medida
+- Automatización
+- SEO / Marketing digital
+
+Cada uno con:
+- ícono
+- beneficio claro (no solo descripción)
+
+---
+
+## 4. BENEFICIOS
+
+Sección tipo:
+
+“¿Por qué elegirnos?”
+
+- Entregas rápidas
+- Soporte continuo
+- Soluciones personalizadas
+- Experiencia comprobada
+
+---
+
+## 5. PROCESO
+
+Explicar en 3 pasos:
+
+1. Analizamos tu negocio  
+2. Diseñamos la solución  
+3. Implementamos y optimizamos  
+
+---
+
+## 6. CTA FUERTE
+
+Sección dedicada:
+
+- Headline:
+  “Empieza tu proyecto hoy”
+
+- Botón grande:
+  “Solicitar cotización”
+
+---
+
+## 7. FORMULARIO (CRÍTICO)
+
+Debe ser SIMPLE:
+
+- Nombre
+- Teléfono / WhatsApp
+- Servicio
+
+Botón:
+“Recibir cotización”
+
+---
+
+## 8. WHATSAPP FLOATING BUTTON
+
+Siempre visible
+
+---
+
+# 💰 COPYWRITING (IMPORTANTE)
+
+- Orientado a beneficios, no características
+- Lenguaje simple y directo
+- Enfocado en resultados:
+  - más ventas
+  - más clientes
+  - automatización
+
+---
+
+# 🎨 DISEÑO
+
+- Moderno (tipo SaaS)
+- Mobile-first
+- Espaciado amplio
+- Botones visibles
+- Colores que contrasten CTA
+
+---
+
+# ⚡ PERFORMANCE
+
+- Usar Next.js
+- Server Components
+- next/image
+- Lazy loading
+- Evitar JS innecesario
+
+Objetivo:
+- Carga < 2s
+- PageSpeed > 90 mobile
+
+---
+
+# 🌐 SEO
+
+- H1 optimizado
+- H2 con keywords
+- metadata (title + description)
+- HTML semántico
+
+---
+
+# 🔥 BACKEND (FORM)
+
+Crear endpoint:
+
+/api/lead
+
+- Recibe datos
+- Simula envío a webhook
+- Responde success
+
+---
+
+# 🚨 ERRORES A EVITAR
+
+- No usar mucho texto
+- No usar CTA débiles
+- No ocultar formulario
+- No depender solo de diseño (debe vender)
+
+---
+
+# 🎁 BONUS
+
+- Animaciones suaves
+- Microinteracciones en botones
+- Feedback visual en formulario
+
+---
+
+# 📦 ENTREGA
+
+- Código completo de la landing
+- Componentes reutilizables
+- Listo para deploy en Vercel

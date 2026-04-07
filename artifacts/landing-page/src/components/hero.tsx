@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Search, MapPin } from "lucide-react";
+import { ArrowRight, Search, MapPin, Clock } from "lucide-react";
 
 export function Hero() {
   return (
@@ -12,9 +12,15 @@ export function Hero() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary font-semibold text-sm mb-6 border border-secondary/20">
-            <MapPin size={16} />
-            Producción Local · Entrega en Todo Costa Rica
+          <div className="flex flex-wrap gap-3 mb-6">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary font-semibold text-sm border border-secondary/20">
+              <MapPin size={16} />
+              Producción Local · Entrega en Todo Costa Rica
+            </div>
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 text-accent font-semibold text-sm border border-accent/20">
+              <Clock size={16} />
+              Cotizamos en menos de 24 horas
+            </div>
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 text-primary leading-[1.15]">
@@ -37,11 +43,11 @@ export function Hero() {
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
             </a>
             <a
-              href="#features"
+              href="#contact"
               className="w-full sm:w-auto px-8 py-4 rounded-md font-bold text-lg bg-white text-primary border-2 border-primary/20 hover:border-primary hover:bg-muted/50 transition-all duration-300 flex items-center justify-center gap-2"
             >
               <Search size={20} />
-              Ver Modelos
+              Ver precios y modelos
             </a>
           </div>
         </motion.div>

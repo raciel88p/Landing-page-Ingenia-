@@ -3,6 +3,7 @@ import { Navbar } from "@/components/navbar";
 import { Hero } from "@/components/hero";
 import { WhatsAppButton } from "@/components/whatsapp-button";
 
+const StatsBar = lazy(() => import("@/components/stats-bar").then(m => ({ default: m.StatsBar })));
 const Gallery = lazy(() => import("@/components/gallery").then(m => ({ default: m.Gallery })));
 const SocialProof = lazy(() => import("@/components/social-proof").then(m => ({ default: m.SocialProof })));
 const HowItWorks = lazy(() => import("@/components/how-it-works").then(m => ({ default: m.HowItWorks })));
@@ -23,6 +24,9 @@ export default function LandingPage() {
       <Navbar />
       <main>
         <Hero />
+        <Suspense fallback={<SectionFallback />}>
+          <StatsBar />
+        </Suspense>
         <Suspense fallback={<SectionFallback />}>
           <Gallery />
         </Suspense>
