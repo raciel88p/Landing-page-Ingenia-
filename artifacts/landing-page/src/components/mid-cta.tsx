@@ -12,7 +12,7 @@ export function MidCTA() {
           className="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left"
         >
           <div>
-            <h2 className="text-2xl md:text-3xl font-extrabold mb-2">
+            <h2 className="text-2xl md:text-3xl font-extrabold mb-2 text-white">
               ¿Listo para mejorar la imagen de su empresa?
             </h2>
             <p className="text-white/70 text-lg">
