@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Navbar } from "@/components/navbar";
 import { Hero } from "@/components/hero";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 
 const Gallery = lazy(() => import("@/components/gallery").then(m => ({ default: m.Gallery })));
 const SocialProof = lazy(() => import("@/components/social-proof").then(m => ({ default: m.SocialProof })));
@@ -50,6 +51,7 @@ export default function LandingPage() {
       <Suspense fallback={<SectionFallback />}>
         <Footer />
       </Suspense>
+      <WhatsAppButton />
     </div>
   );
 }
