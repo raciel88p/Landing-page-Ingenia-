@@ -1,0 +1,200 @@
+Actúa como un Full Stack Developer Senior + Technical SEO + CRO Specialist.
+
+Tu tarea es reconstruir completamente una web corporativa basada en https://ingeniacr.com, pero corrigiendo todos los problemas actuales de arquitectura, performance, SEO y conversión.
+
+La nueva web debe ser moderna, ultra rápida, escalable y optimizada para generación de leads.
+
+---
+
+# 🎯 OBJETIVOS
+
+1. Generar leads (formularios + WhatsApp)
+2. Optimizar velocidad (Core Web Vitals)
+3. Mejorar SEO técnico (indexación real)
+4. Preparar para tráfico pago (Google Ads / Meta)
+5. Escalar fácilmente en Vercel
+
+---
+
+# ⚙️ STACK OBLIGATORIO
+
+- Next.js 14+ (App Router)
+- Tailwind CSS
+- Server Components (por defecto)
+- API Routes (serverless)
+- Compatible 100% con Vercel (sin servidores Node persistentes)
+
+NO usar:
+- Express
+- app.listen()
+- backend tradicional
+
+---
+
+# 🧱 ESTRUCTURA DEL PROYECTO
+
+/app
+  /page.js (Home)
+  /servicios/page.js
+  /contacto/page.js
+  /api/lead/route.js
+
+/components
+  Navbar.jsx
+  Hero.jsx
+  Servicios.jsx
+  Beneficios.jsx
+  Testimonios.jsx
+  CTA.jsx
+  Footer.jsx
+
+/lib
+  seo.js
+  analytics.js
+
+/public
+  /images
+
+---
+
+# 🎨 DISEÑO (IMPORTANTE)
+
+- Basado en la estructura actual de ingeniacr.com
+- Modernizar estilo tipo SaaS / agencia premium
+- Mobile-first
+- UI limpia, rápida, con mucho espacio blanco
+- Botones grandes y visibles
+
+---
+
+# 💰 CRO (CRÍTICO)
+
+Implementar:
+
+- Hero con propuesta clara:
+  “Desarrollamos soluciones digitales que hacen crecer tu negocio”
+  
+- CTA above the fold:
+  “Cotiza tu proyecto ahora”
+
+- Botón flotante de WhatsApp
+
+- Formulario simple:
+  - Nombre
+  - Teléfono
+  - Servicio
+
+- Prueba social:
+  - Testimonios
+  - Logos de clientes
+
+- Sección clara de servicios
+
+---
+
+# 🚀 PERFORMANCE (OPTIMIZACIÓN AVANZADA)
+
+Optimizar para:
+
+- LCP < 2.5s
+- CLS < 0.1
+- INP < 200ms
+
+Aplicar:
+
+- Server Components (reducir JS)
+- Lazy loading en imágenes
+- Uso de next/image
+- Evitar librerías pesadas
+- Carga diferida de scripts
+- Fonts optimizadas (font-display: swap)
+- Código limpio y modular
+
+---
+
+# 🌐 SEO TÉCNICO
+
+Implementar:
+
+- SSR real en todas las páginas
+- Metadata dinámica (title, description)
+- Open Graph (Facebook / WhatsApp)
+- sitemap.xml dinámico
+- robots.txt
+- HTML semántico (H1, H2, H3 bien estructurados)
+- URLs amigables
+
+---
+
+# 🔥 BACKEND (LEADS)
+
+Crear endpoint:
+
+/api/lead
+
+Funcionalidad:
+
+- Recibir datos del formulario
+- Validar inputs
+- Enviar a webhook (simulado)
+- Responder con status 200
+
+---
+
+# ⚡ ANALÍTICA
+
+Preparar integración para:
+
+- Google Tag Manager
+- Meta Pixel
+
+(Código listo pero comentado)
+
+---
+
+# 🔒 SEGURIDAD
+
+Agregar headers básicos:
+
+- X-Frame-Options
+- X-Content-Type-Options
+- Cache-Control
+
+---
+
+# 📈 ESCALABILIDAD
+
+La arquitectura debe permitir:
+
+- agregar múltiples landings
+- SEO programático (crear páginas dinámicas)
+- internacionalización futura
+
+---
+
+# 🚨 ERRORES A EVITAR (IMPORTANTE)
+
+- No usar renderizado solo en cliente
+- No cargar JS innecesario
+- No usar imágenes sin optimizar
+- No depender de backend Node tradicional
+
+---
+
+# 🎁 BONUS
+
+- Animaciones ligeras (Framer Motion opcional)
+- Diseño listo para conversión alta
+- Código limpio y listo para producción
+
+---
+
+# 📦 ENTREGA
+
+- Código completo listo para deploy en Vercel
+- Instrucciones para correr localmente:
+  npm install
+  npm run dev
+  npm run build
+
+- Explicación breve de la arquitectura
