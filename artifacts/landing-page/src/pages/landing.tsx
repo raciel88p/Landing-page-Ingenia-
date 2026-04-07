@@ -1,14 +1,20 @@
+import { lazy, Suspense } from "react";
 import { Navbar } from "@/components/navbar";
 import { Hero } from "@/components/hero";
-import { SocialProof } from "@/components/social-proof"; // Problem section
-import { Features } from "@/components/features"; // Solution
-import { HowItWorks } from "@/components/how-it-works"; // Opportunity
-import { Testimonials } from "@/components/testimonials"; // Use cases
-import { Pricing } from "@/components/pricing"; // Impact stats
-import { FAQ } from "@/components/faq";
-import { FinalCTA } from "@/components/final-cta";
-import { Footer } from "@/components/footer";
-import { Gallery } from "@/components/gallery";
+
+const Gallery = lazy(() => import("@/components/gallery").then(m => ({ default: m.Gallery })));
+const SocialProof = lazy(() => import("@/components/social-proof").then(m => ({ default: m.SocialProof })));
+const HowItWorks = lazy(() => import("@/components/how-it-works").then(m => ({ default: m.HowItWorks })));
+const Features = lazy(() => import("@/components/features").then(m => ({ default: m.Features })));
+const Pricing = lazy(() => import("@/components/pricing").then(m => ({ default: m.Pricing })));
+const Testimonials = lazy(() => import("@/components/testimonials").then(m => ({ default: m.Testimonials })));
+const FAQ = lazy(() => import("@/components/faq").then(m => ({ default: m.FAQ })));
+const FinalCTA = lazy(() => import("@/components/final-cta").then(m => ({ default: m.FinalCTA })));
+const Footer = lazy(() => import("@/components/footer").then(m => ({ default: m.Footer })));
+
+function SectionFallback() {
+  return <div className="h-32" aria-hidden="true" />;
+}
 
 export default function LandingPage() {
   return (
@@ -16,16 +22,34 @@ export default function LandingPage() {
       <Navbar />
       <main>
         <Hero />
-        <Gallery />
-        <SocialProof />
-        <HowItWorks />
-        <Features />
-        <Pricing />
-        <Testimonials />
-        <FAQ />
-        <FinalCTA />
+        <Suspense fallback={<SectionFallback />}>
+          <Gallery />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <SocialProof />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <HowItWorks />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <Features />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <Pricing />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <Testimonials />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <FAQ />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <FinalCTA />
+        </Suspense>
       </main>
-      <Footer />
+      <Suspense fallback={<SectionFallback />}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }
