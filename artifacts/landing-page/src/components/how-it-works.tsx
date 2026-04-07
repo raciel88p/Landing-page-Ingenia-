@@ -1,22 +1,25 @@
 import { motion } from "framer-motion";
-import { Star, ShieldCheck, Briefcase } from "lucide-react";
+import { TrendingDown, ThumbsUp, Clock } from "lucide-react";
 
 export function HowItWorks() {
   const benefits = [
     {
-      icon: <Star className="text-accent" size={32} />,
-      title: "Mejoran la percepción de marca en campo",
-      description: "Proyecte una imagen premium que destaque a su empresa de la competencia en cada interacción."
+      icon: <TrendingDown className="text-accent" size={32} />,
+      stat: "Hasta 30% menos",
+      title: "en costos de reposición",
+      description: "La alta durabilidad de nuestros materiales significa menos reemplazos frecuentes y un gasto anual significativamente menor."
     },
     {
-      icon: <ShieldCheck className="text-secondary" size={32} />,
-      title: "Incrementan la confianza del cliente",
-      description: "Un equipo bien uniformado transmite profesionalismo, seguridad y atención al detalle."
+      icon: <ThumbsUp className="text-secondary" size={32} />,
+      stat: "Más confianza",
+      title: "desde el primer contacto",
+      description: "Un equipo uniformado proyecta orden, seriedad y compromiso. Sus clientes lo percibirán así desde la primera visita."
     },
     {
-      icon: <Briefcase className="text-primary" size={32} />,
-      title: "Refuerzan consistencia visual",
-      description: "Mantenga la integridad de su marca en todos los puntos de contacto, desde la oficina hasta la operación en campo."
+      icon: <Clock className="text-primary" size={32} />,
+      stat: "30 días",
+      title: "para tener su equipo listo",
+      description: "Desde la cotización hasta la entrega de todos los uniformes con su logo bordado, listo para salir a campo."
     }
   ];
 
@@ -27,14 +30,23 @@ export function HowItWorks() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-4xl mx-auto mb-20">
-          <motion.h2 
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 text-primary"
+            className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 text-primary"
           >
-            Las empresas que invierten en uniformes funcionales logran:
+            Resultados reales para su empresa
           </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-lg text-muted-foreground"
+          >
+            Las empresas que invierten en uniformes funcionales obtienen beneficios tangibles desde el primer pedido.
+          </motion.p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-12 relative">
@@ -49,14 +61,12 @@ export function HowItWorks() {
               transition={{ delay: index * 0.2, duration: 0.5 }}
               className="relative flex flex-col items-center text-center"
             >
-              <div className="w-24 h-24 rounded-full bg-white border border-gray-200 flex items-center justify-center mb-8 relative z-10 shadow-md">
+              <div className="w-24 h-24 rounded-full bg-white border border-gray-200 flex items-center justify-center mb-6 relative z-10 shadow-md">
                 {benefit.icon}
               </div>
-              
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">{benefit.title}</h3>
-              <p className="text-gray-600 leading-relaxed max-w-sm">
-                {benefit.description}
-              </p>
+              <div className="text-3xl font-extrabold text-accent mb-1">{benefit.stat}</div>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">{benefit.title}</h3>
+              <p className="text-gray-600 leading-relaxed max-w-sm">{benefit.description}</p>
             </motion.div>
           ))}
         </div>

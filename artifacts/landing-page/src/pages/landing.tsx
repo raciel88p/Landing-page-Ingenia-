@@ -9,7 +9,10 @@ const SocialProof = lazy(() => import("@/components/social-proof").then(m => ({ 
 const HowItWorks = lazy(() => import("@/components/how-it-works").then(m => ({ default: m.HowItWorks })));
 const Features = lazy(() => import("@/components/features").then(m => ({ default: m.Features })));
 const Pricing = lazy(() => import("@/components/pricing").then(m => ({ default: m.Pricing })));
+const MidCTA = lazy(() => import("@/components/mid-cta").then(m => ({ default: m.MidCTA })));
 const Testimonials = lazy(() => import("@/components/testimonials").then(m => ({ default: m.Testimonials })));
+const Comparison = lazy(() => import("@/components/comparison").then(m => ({ default: m.Comparison })));
+const TestimonialQuotes = lazy(() => import("@/components/testimonial-quotes").then(m => ({ default: m.TestimonialQuotes })));
 const FAQ = lazy(() => import("@/components/faq").then(m => ({ default: m.FAQ })));
 const FinalCTA = lazy(() => import("@/components/final-cta").then(m => ({ default: m.FinalCTA })));
 const Footer = lazy(() => import("@/components/footer").then(m => ({ default: m.Footer })));
@@ -43,7 +46,16 @@ export default function LandingPage() {
           <Pricing />
         </Suspense>
         <Suspense fallback={<SectionFallback />}>
+          <MidCTA />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <Comparison />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
           <Testimonials />
+        </Suspense>
+        <Suspense fallback={<SectionFallback />}>
+          <TestimonialQuotes />
         </Suspense>
         <Suspense fallback={<SectionFallback />}>
           <FAQ />

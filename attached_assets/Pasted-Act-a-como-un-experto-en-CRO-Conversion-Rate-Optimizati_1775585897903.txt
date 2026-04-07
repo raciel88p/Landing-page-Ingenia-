@@ -1,0 +1,181 @@
+Actúa como un experto en CRO (Conversion Rate Optimization), Copywriting persuasivo B2B y desarrollo frontend con Next.js.
+
+Tu tarea es OPTIMIZAR una landing page existente (NO rehacerla desde cero) que vende camisas tipo Columbia corporativas en Costa Rica.
+
+La página ya tiene buena estructura, pero necesita mejoras en copy, conversión, claridad y persuasión para aumentar leads.
+
+---
+
+# 🎯 OBJETIVO
+
+Incrementar la conversión de visitantes a leads (WhatsApp / formulario) en al menos +30% mediante:
+
+- Mejor copy (más claro y persuasivo)
+- Mejores CTAs (más directos y con urgencia)
+- Mayor confianza (prueba social)
+- Mejor estructura mental tipo funnel
+
+---
+
+# 🔧 MEJORAS OBLIGATORIAS
+
+## 1. HERO (REESCRIBIR - CRÍTICO)
+
+Reemplazar el headline actual por uno más agresivo y orientado a resultados.
+
+Usar este enfoque:
+
+- Resultado + beneficio + contexto
+
+Ejemplo base:
+“Uniformes corporativos que elevan la imagen de su empresa y resisten el trabajo real en campo”
+
+Agregar:
+
+- Subheadline claro
+- CTA principal:
+  “Recibir cotización en menos de 24h”
+- CTA secundario:
+  “Cotizar por WhatsApp ahora”
+
+---
+
+## 2. CTA (MEJORAR TODOS)
+
+Reemplazar CTAs genéricos como:
+- “Solicitar cotización”
+
+Por versiones con intención:
+
+- “Recibir cotización en menos de 24h”
+- “Cotizar por WhatsApp ahora”
+- “Ver precios para mi empresa”
+
+Agregar CTA en:
+- Hero
+- mitad de página
+- final
+
+---
+
+## 3. AGREGAR OFERTA (HOOK DE CONVERSIÓN)
+
+Incluir texto visible:
+
+- “Cotización sin compromiso en menos de 24 horas”
+- “Asesoría gratuita para su empresa”
+- “Le ayudamos a elegir el uniforme ideal según su sector”
+
+---
+
+## 4. PRUEBA SOCIAL (MEJORAR)
+
+Agregar:
+
+- 1–2 testimonios (pueden ser simulados)
+Ejemplo:
+“Desde que usamos estos uniformes, nuestros clientes nos perciben mucho más profesionales”
+
+- Mantener métricas actuales (+80 empresas, +5000 uniformes)
+
+---
+
+## 5. SECCIÓN DE IMPACTO (REESCRIBIR)
+
+Convertir beneficios abstractos en resultados tangibles:
+
+Ejemplo:
+
+- Reduce costos de reposición hasta en 30%
+- Mejora la percepción de su empresa en visitas
+- Aumenta la confianza del cliente en campo
+
+---
+
+## 6. FORMULARIO (OPTIMIZAR)
+
+Agregar encima del formulario:
+
+“Reciba precios y modelos en menos de 24 horas por WhatsApp”
+
+Debajo:
+
+“Le ayudamos a elegir la mejor opción para su equipo”
+
+Mantener campos simples:
+- Nombre
+- WhatsApp
+- Cantidad
+
+---
+
+## 7. COMPARACIÓN (NUEVA SECCIÓN)
+
+Agregar sección:
+
+“¿Por qué no usar uniformes genéricos?”
+
+Comparación:
+
+Uniformes comunes:
+- Baja durabilidad
+- Mala imagen
+- Incomodidad
+
+Nuestros uniformes:
+- Alta resistencia
+- Imagen profesional
+- Comodidad en clima tropical
+
+---
+
+## 8. COPY GENERAL
+
+Optimizar todo el contenido:
+
+- Menos texto técnico
+- Más beneficios
+- Lenguaje claro
+- Orientado a empresa (B2B)
+
+---
+
+## 9. UX Y DISEÑO
+
+- Hacer botones más visibles
+- Mejorar spacing
+- Resaltar CTAs con color
+- Mantener diseño actual pero optimizado
+
+---
+
+## 10. PERFORMANCE
+
+- Mantener optimización actual
+- No agregar librerías pesadas
+- Mantener carga rápida
+
+---
+
+# 🚨 ERRORES A EVITAR
+
+- No rehacer toda la página
+- No eliminar secciones existentes
+- No usar copy genérico
+- No complicar el formulario
+
+---
+
+# 🎁 BONUS
+
+- Agregar microcopy en botones
+- Feedback visual en formulario
+- Animaciones suaves
+
+---
+
+# 📦 ENTREGA
+
+- Código actualizado de la landing
+- Cambios enfocados en conversión
+- Explicación breve de mejoras realizadas

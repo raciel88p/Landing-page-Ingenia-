@@ -55,10 +55,10 @@ export function FinalCTA() {
           </div>
 
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-4 leading-tight">
-            Solicite su cotización hoy
+            Reciba precios y modelos en menos de 24 horas
           </h2>
           <p className="text-xl text-white/70 mb-10 max-w-xl mx-auto">
-            Sin compromiso. Le respondemos por WhatsApp con precios y opciones específicas para su empresa.
+            Le ayudamos a elegir la mejor opción para su equipo, sin compromiso y directo por WhatsApp.
           </p>
 
           <div className="bg-white/10 border border-white/20 p-8 md:p-10 rounded-3xl backdrop-blur-md max-w-lg mx-auto shadow-2xl">

@@ -24,11 +24,14 @@ export function Hero() {
           </div>
           
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 text-primary leading-[1.15]">
-            Camisas Tipo Columbia para su <span className="text-accent">Empresa</span> en Costa Rica
+            Uniformes corporativos que elevan su <span className="text-accent">imagen de marca</span> y resisten el trabajo real en campo
           </h1>
           
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-            Optimice la imagen de su equipo. Mejore la percepción de marca. Aumente el profesionalismo en campo con uniformes técnicos de alto rendimiento.
+          <p className="text-lg md:text-xl text-muted-foreground mb-3 leading-relaxed">
+            Camisas tipo Columbia con bordado personalizado. Producción local en Costa Rica. Entrega a todo el país en 30 días.
+          </p>
+          <p className="text-base text-secondary font-semibold mb-8">
+            ✓ Cotización sin compromiso &nbsp;·&nbsp; ✓ Asesoría gratuita &nbsp;·&nbsp; ✓ Respuesta en menos de 24 horas
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4">
@@ -39,15 +42,17 @@ export function Hero() {
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-4 rounded-md font-bold text-lg bg-accent text-white shadow-lg shadow-accent/30 hover:shadow-xl hover:shadow-accent/40 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group"
             >
-              Solicitar Cotización
+              Recibir cotización en 24 horas
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
             </a>
             <a
-              href="#contact"
+              href="https://wa.me/50689437109?text=En%20Ingenia%20es%20un%20gusto%20atenderle."
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto px-8 py-4 rounded-md font-bold text-lg bg-white text-primary border-2 border-primary/20 hover:border-primary hover:bg-muted/50 transition-all duration-300 flex items-center justify-center gap-2"
             >
               <Search size={20} />
-              Ver precios y modelos
+              Cotizar por WhatsApp ahora
             </a>
           </div>
         </motion.div>

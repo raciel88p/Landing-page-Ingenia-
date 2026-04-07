@@ -66,7 +66,7 @@ export function Navbar() {
               rel="noopener noreferrer"
               className="px-6 py-2.5 rounded-md font-semibold text-sm bg-accent text-white hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/25 transition-all duration-300 hover:-translate-y-0.5"
             >
-              Solicitar Cotización
+              Cotización Gratis →
             </a>
           </div>
 
@@ -109,7 +109,7 @@ export function Navbar() {
                   onClick={() => setMobileMenuOpen(false)}
                   className="block w-full text-center px-6 py-3 rounded-md font-semibold bg-accent text-white shadow-lg shadow-accent/25"
                 >
-                  Solicitar Cotización
+                  Cotización Gratis →
                 </a>
               </div>
             </div>
