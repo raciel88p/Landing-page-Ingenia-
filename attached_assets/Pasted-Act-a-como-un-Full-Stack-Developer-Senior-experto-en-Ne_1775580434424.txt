@@ -1,0 +1,133 @@
+Actúa como un Full Stack Developer Senior experto en Next.js, performance web, SEO técnico y CRO.
+
+Quiero que reconstruyas completamente una página web corporativa basada en el layout actual de https://ingeniacr.com, pero optimizada para:
+
+1. Performance (Core Web Vitals)
+2. SEO técnico (renderizado SSR)
+3. Conversión (lead generation)
+4. Escalabilidad en Vercel (serverless architecture)
+
+### ⚙️ STACK OBLIGATORIO
+
+- Next.js 14+ (App Router)
+- Deploy optimizado para Vercel
+- Tailwind CSS
+- Server Components por defecto
+- API routes para formularios
+
+---
+
+### 🎯 OBJETIVO DE NEGOCIO
+
+- Generación de leads (formularios)
+- Posicionamiento SEO
+- Alta velocidad de carga (<2s)
+- Preparado para tráfico pago (Google Ads / Meta)
+
+---
+
+### 🧱 ESTRUCTURA
+
+Crea esta estructura:
+
+/app
+  /page.js (Home)
+  /servicios/page.js
+  /contacto/page.js
+  /api/lead/route.js
+
+/components
+  Hero.jsx
+  Servicios.jsx
+  Testimonios.jsx
+  CTA.jsx
+  Navbar.jsx
+  Footer.jsx
+
+---
+
+### 🚀 REQUISITOS DE PERFORMANCE (CRÍTICO)
+
+Optimizar según PageSpeed:
+
+- Eliminar render blocking JS
+- Usar lazy loading en imágenes
+- Usar next/image
+- Minimizar JS (usar server components)
+- Evitar librerías pesadas innecesarias
+- Cargar fuentes con font-display: swap
+- Implementar caching headers
+
+Objetivo:
+- LCP < 2.5s
+- CLS < 0.1
+- INP < 200ms
+
+---
+
+### 🌐 SEO TÉCNICO
+
+- SSR en todas las páginas
+- Metadata dinámica (title, description)
+- Open Graph
+- sitemap.xml
+- robots.txt
+- HTML semántico
+- H1, H2 optimizados
+
+---
+
+### 💰 CRO (MUY IMPORTANTE)
+
+- Hero con propuesta de valor clara
+- CTA visible above the fold
+- Formulario simple (nombre + whatsapp)
+- Prueba social (testimonios)
+- Sección de servicios clara
+
+---
+
+### 🔥 FORMULARIO (BACKEND)
+
+Crear endpoint:
+
+/api/lead
+
+Funcionalidad:
+- Recibir datos del formulario
+- Enviar a webhook (simulado)
+- Retornar status 200
+
+---
+
+### ⚡ DISEÑO
+
+- Basado en el diseño actual de ingeniacr.com
+- Modernizar UI (tipo SaaS / agencia premium)
+- Mobile-first
+- UX limpia, rápida y clara
+
+---
+
+### 🚨 IMPORTANTE
+
+NO usar:
+- Express server
+- app.listen()
+- backend tradicional
+
+TODO debe ser compatible con Vercel serverless
+
+---
+
+### 🎁 BONUS
+
+- Agregar animaciones ligeras (Framer Motion opcional)
+- Optimizar para 90+ en PageSpeed mobile
+- Código limpio y modular
+
+---
+
+Entrega:
+- Código completo listo para deploy en Vercel
+- Explicación breve de cómo correrlo
