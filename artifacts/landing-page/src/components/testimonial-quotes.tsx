@@ -3,32 +3,8 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "Desde que usamos los uniformes de Ingenia, nuestros clientes nos perciben mucho más profesionales. La calidad del bordado y la tela superaron nuestras expectativas. Vale cada colón invertido.",
-    name: "Carlos Rodríguez",
-    role: "Gerente de Ventas",
-    company: "TechDistri CR",
-    initials: "CR",
-    color: "bg-primary",
-  },
-  {
-    quote: "Pedimos 45 camisas y quedamos muy satisfechos. El bordado quedó impecable y la tela aguanta el sol de Costa Rica sin problema. El equipo se siente cómodo incluso en las giras de todo el día.",
-    name: "María Solano",
-    role: "Recursos Humanos",
-    company: "Logística del Norte",
-    initials: "MS",
-    color: "bg-secondary",
-  },
-  {
-    quote: "Cotizamos el viernes, confirmamos el lunes y recibimos todo en el plazo prometido. El proceso fue muy ágil y los precios son competitivos para la calidad que recibimos. Totalmente recomendado.",
-    name: "Andrés Mora",
-    role: "Director General",
-    company: "Mora & Asociados",
-    initials: "AM",
-    color: "bg-accent",
-  },
-  {
     quote: "La atención personalizada y la calidad de las camisas Columbia es excepcional. Nuestro equipo técnico ahora proyecta la imagen de confianza y profesionalismo que siempre buscamos.",
-    name: "Representante",
+    name: "Andrey Montoya",
     role: "Equipo Técnico",
     company: "Avanza",
     initials: "AV",
@@ -36,7 +12,7 @@ const testimonials = [
   },
   {
     quote: "Las camisas para nuestro equipo de ventas y distribución han sido un éxito. Soportan el uso diario en el clima de Costa Rica manteniendo siempre el color y la buena apariencia.",
-    name: "Administración",
+    name: "Jennifer Delgado - Propietaria",
     role: "Operaciones",
     company: "JD Panadería",
     initials: "JD",
@@ -44,7 +20,7 @@ const testimonials = [
   },
   {
     quote: "Nuestra experiencia con Ingenia ha sido impecable. El bordado es detallado, preciso, y los uniformes aportan comodidad y elegancia en cada proyecto que visitamos.",
-    name: "Dirección",
+    name: "Marilyn Rodríguez Propietaria",
     role: "Gestión de Proyectos",
     company: "Maromo",
     initials: "MR",
