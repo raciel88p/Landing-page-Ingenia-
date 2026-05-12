@@ -68,6 +68,7 @@ export function Hero() {
             <img 
               src={`${import.meta.env.BASE_URL}images/hero-shirt.jpeg`} 
               alt="Profesional con camisa corporativa en Costa Rica" 
+              loading="lazy"
               className="w-full h-auto object-cover aspect-[4/3]"
             />
           </div>

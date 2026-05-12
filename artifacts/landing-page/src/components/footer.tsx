@@ -10,6 +10,7 @@ export function Footer() {
               <img
                 src={`${import.meta.env.BASE_URL}images/logo-ingenia.png`}
                 alt="Ingenia logo"
+                loading="lazy"
                 className="h-10 w-10 object-contain"
               />
               <span className="font-display font-bold text-2xl tracking-tight text-primary">

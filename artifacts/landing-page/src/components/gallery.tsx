@@ -101,6 +101,7 @@ export function Gallery() {
               exit={{ opacity: 0, scale: 0.9 }}
               src={`${import.meta.env.BASE_URL}images/${images[selected].src}`}
               alt={images[selected].label}
+              loading="lazy"
               className="max-h-[85vh] max-w-[85vw] object-contain rounded-xl shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             />
