@@ -5,7 +5,7 @@ import LandingPage from "@/pages/landing";
 
 const queryClient = new QueryClient();
 
-function App() {
+export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
@@ -15,5 +15,3 @@ function App() {
     </QueryClientProvider>
   );
 }
-
-export default App;

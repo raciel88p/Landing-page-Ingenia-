@@ -26,6 +26,30 @@ const testimonials = [
     initials: "AM",
     color: "bg-accent",
   },
+  {
+    quote: "La atención personalizada y la calidad de las camisas Columbia es excepcional. Nuestro equipo técnico ahora proyecta la imagen de confianza y profesionalismo que siempre buscamos.",
+    name: "Representante",
+    role: "Equipo Técnico",
+    company: "Avanza",
+    initials: "AV",
+    color: "bg-primary/80",
+  },
+  {
+    quote: "Las camisas para nuestro equipo de ventas y distribución han sido un éxito. Soportan el uso diario en el clima de Costa Rica manteniendo siempre el color y la buena apariencia.",
+    name: "Administración",
+    role: "Operaciones",
+    company: "JD Panadería",
+    initials: "JD",
+    color: "bg-secondary/80",
+  },
+  {
+    quote: "Nuestra experiencia con Ingenia ha sido impecable. El bordado es detallado, preciso, y los uniformes aportan comodidad y elegancia en cada proyecto que visitamos.",
+    name: "Dirección",
+    role: "Gestión de Proyectos",
+    company: "Maromo",
+    initials: "MR",
+    color: "bg-accent/80",
+  },
 ];
 
 export function TestimonialQuotes() {
