@@ -1,16 +1,13 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import LandingPage from "@/pages/landing";
 
 const queryClient = new QueryClient();
 
-export default function App() {
+export function ContextWrapper({ children }: { children: React.ReactNode }) {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <LandingPage />
-        <Toaster />
+        {children}
       </TooltipProvider>
     </QueryClientProvider>
   );
