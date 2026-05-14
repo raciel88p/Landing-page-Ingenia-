@@ -1,5 +1,22 @@
 ---
-import App from '../App.tsx';
+import { ContextWrapper } from '../components/context-wrapper.tsx';
+import { Navbar } from '../components/navbar.tsx';
+import { Hero } from '../components/hero.tsx';
+import { WhatsAppButton } from '../components/whatsapp-button.tsx';
+import { StatsBar } from '../components/stats-bar.tsx';
+import { Gallery } from '../components/gallery.tsx';
+import { SocialProof } from '../components/social-proof.tsx';
+import { HowItWorks } from '../components/how-it-works.tsx';
+import { Features } from '../components/features.tsx';
+import { Pricing } from '../components/pricing.tsx';
+import { MidCTA } from '../components/mid-cta.tsx';
+import { Testimonials } from '../components/testimonials.tsx';
+import { Comparison } from '../components/comparison.tsx';
+import { TestimonialQuotes } from '../components/testimonial-quotes.tsx';
+import { FAQ } from '../components/faq.tsx';
+import { FinalCTA } from '../components/final-cta.tsx';
+import { Footer } from '../components/footer.tsx';
+import { Toaster } from '../components/ui/toaster.tsx';
 import { GoogleTagmanager } from '@digi4care/astro-google-tagmanager';
 import '../index.css';
 ---
@@ -139,7 +156,29 @@ import '../index.css';
   </head>
   <body>
     <div id="root">
-      <App client:load />
+      <ContextWrapper client:load>
+        <div class="min-h-screen bg-background text-foreground">
+          <Navbar client:load />
+          <main>
+            <Hero client:load />
+            <StatsBar client:visible />
+            <Gallery client:visible />
+            <SocialProof client:visible />
+            <HowItWorks client:visible />
+            <Features client:visible />
+            <Pricing client:visible />
+            <MidCTA client:visible />
+            <Comparison client:visible />
+            <Testimonials client:visible />
+            <TestimonialQuotes client:visible />
+            <FAQ client:visible />
+            <FinalCTA client:visible />
+          </main>
+          <Footer client:visible />
+          <WhatsAppButton client:load />
+        </div>
+        <Toaster client:load />
+      </ContextWrapper>
     </div>
   </body>
 </html>
