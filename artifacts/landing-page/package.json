@@ -78,7 +78,9 @@
     "zod": "catalog:"
   },
   "dependencies": {
+    "@astrojs/compiler": "^4.0.0",
     "@astrojs/react": "^5.0.4",
+    "@digi4care/astro-google-tagmanager": "^1.6.0",
     "astro": "^6.3.1",
     "compression": "^1.8.1",
     "express": "^5.2.1",
