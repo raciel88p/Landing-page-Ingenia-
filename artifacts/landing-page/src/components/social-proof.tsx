@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { AlertCircle, ThermometerSun, Users, DollarSign } from "lucide-react";
 
 export function SocialProof() {
@@ -35,12 +34,8 @@ export function SocialProof() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {problems.map((problem, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
               className="p-8 rounded-2xl bg-muted/30 border border-border/50 text-center hover:shadow-lg transition-shadow duration-300"
             >
               <div className="mx-auto w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center mb-6">
@@ -48,7 +43,7 @@ export function SocialProof() {
               </div>
               <h3 className="text-xl font-semibold mb-3 text-foreground">{problem.title}</h3>
               <p className="text-muted-foreground">{problem.description}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

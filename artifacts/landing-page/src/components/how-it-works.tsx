@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { TrendingDown, ThumbsUp, Clock } from "lucide-react";
 
 export function HowItWorks() {
@@ -30,35 +29,24 @@ export function HowItWorks() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-4xl mx-auto mb-20">
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <h2
             className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 text-primary"
           >
             Resultados reales para su empresa
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
+          </h2>
+          <p
             className="text-lg text-muted-foreground"
           >
             Las empresas que invierten en uniformes funcionales obtienen beneficios tangibles desde el primer pedido.
-          </motion.p>
+          </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-12 relative">
           <div className="hidden md:block absolute top-12 left-[15%] right-[15%] h-0.5 bg-gradient-to-r from-primary/10 via-primary/30 to-accent/20" />
 
           {benefits.map((benefit, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.2, duration: 0.5 }}
               className="relative flex flex-col items-center text-center"
             >
               <div className="w-24 h-24 rounded-full bg-white border border-gray-200 flex items-center justify-center mb-6 relative z-10 shadow-md">
@@ -67,7 +55,7 @@ export function HowItWorks() {
               <div className="text-3xl font-extrabold text-accent mb-1">{benefit.stat}</div>
               <h3 className="text-xl font-bold mb-4 text-gray-900">{benefit.title}</h3>
               <p className="text-gray-600 leading-relaxed max-w-sm">{benefit.description}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

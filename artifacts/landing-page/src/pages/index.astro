@@ -1,5 +1,4 @@
 ---
-import { ContextWrapper } from '../components/context-wrapper.tsx';
 import { Navbar } from '../components/navbar.tsx';
 import { Hero } from '../components/hero.tsx';
 import { WhatsAppButton } from '../components/whatsapp-button.tsx';
@@ -156,29 +155,27 @@ import '../index.css';
   </head>
   <body>
     <div id="root">
-      <ContextWrapper client:load>
-        <div class="min-h-screen bg-background text-foreground">
-          <Navbar client:load />
-          <main>
-            <Hero client:load />
-            <StatsBar client:visible />
-            <Gallery client:visible />
-            <SocialProof client:visible />
-            <HowItWorks client:visible />
-            <Features client:visible />
-            <Pricing client:visible />
-            <MidCTA client:visible />
-            <Comparison client:visible />
-            <Testimonials client:visible />
-            <TestimonialQuotes client:visible />
-            <FAQ client:visible />
-            <FinalCTA client:visible />
-          </main>
-          <Footer client:visible />
-          <WhatsAppButton client:load />
-        </div>
-        <Toaster client:load />
-      </ContextWrapper>
+      <div class="min-h-screen bg-background text-foreground">
+        <Navbar client:load />
+        <main>
+          <Hero client:load />
+          <StatsBar client:visible />
+          <Gallery client:visible />
+          <SocialProof client:visible />
+          <HowItWorks client:visible />
+          <Features client:visible />
+          <Pricing client:visible />
+          <MidCTA client:visible />
+          <Comparison client:visible />
+          <Testimonials client:visible />
+          <TestimonialQuotes client:visible />
+          <FAQ client:visible />
+          <FinalCTA client:visible />
+        </main>
+        <Footer client:visible />
+        <WhatsAppButton client:load />
+      </div>
+      <Toaster client:load />
     </div>
   </body>
 </html>

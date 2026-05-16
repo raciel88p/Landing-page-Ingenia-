@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import {
   Accordion,
   AccordionContent,
@@ -34,23 +33,17 @@ export function FAQ() {
     <section id="faq" className="py-24 bg-white border-y border-border/50">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <h2
             className="text-3xl md:text-4xl font-extrabold mb-4 text-primary"
           >
             Preguntas Frecuentes
-          </motion.h2>
+          </h2>
           <p className="text-lg text-muted-foreground">
             Todo lo que necesita saber para realizar su pedido corporativo.
           </p>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+        <div
           className="bg-muted/20 rounded-3xl p-6 md:p-8 shadow-sm border border-border"
         >
           <Accordion type="single" collapsible className="w-full">
@@ -65,7 +58,7 @@ export function FAQ() {
               </AccordionItem>
             ))}
           </Accordion>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

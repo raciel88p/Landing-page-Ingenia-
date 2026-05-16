@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
 import { ArrowRight, Clock, CheckCircle2, MessageCircle } from "lucide-react";
 
 const WA_FALLBACK = "https://wa.me/50689437109?text=En%20Ingenia%20es%20un%20gusto%20atenderle.";
@@ -43,11 +42,7 @@ export function FinalCTA() {
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/20 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+        <div
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/20 text-accent font-semibold text-sm mb-6 border border-accent/30">
             <Clock size={16} />
@@ -135,7 +130,7 @@ export function FinalCTA() {
               </form>
             )}
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

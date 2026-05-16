@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Briefcase, Truck, TreePine, Wrench } from "lucide-react";
 
 export function Testimonials() {
@@ -29,14 +28,11 @@ export function Testimonials() {
     <section id="use-cases" className="py-24 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+          <h2
             className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 text-primary"
           >
             ¿Para quién son ideales?
-          </motion.h2>
+          </h2>
           <p className="text-lg text-muted-foreground">
             Diseñadas para adaptarse a las exigencias de diversos sectores profesionales en Costa Rica.
           </p>
@@ -44,12 +40,8 @@ export function Testimonials() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {useCases.map((useCase, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.15, duration: 0.5 }}
               className="bg-white rounded-2xl p-8 shadow-md border border-border text-center hover:shadow-xl transition-all duration-300"
             >
               <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
@@ -59,7 +51,7 @@ export function Testimonials() {
               <p className="text-muted-foreground text-sm">
                 {useCase.description}
               </p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>
