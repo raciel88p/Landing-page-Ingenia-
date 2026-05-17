@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { X, Check } from "lucide-react";
 
 const genericItems = [
@@ -21,10 +20,7 @@ export function Comparison() {
   return (
     <section className="py-24 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+        <div
           className="text-center mb-14"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-primary mb-4">
@@ -33,14 +29,10 @@ export function Comparison() {
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             La diferencia no es solo visual — impacta directamente en cómo sus clientes perciben su empresa y en el gasto anual de reposición.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
+          <div
             className="rounded-3xl border-2 border-red-200 bg-red-50 p-8"
           >
             <div className="flex items-center gap-3 mb-6">
@@ -57,13 +49,9 @@ export function Comparison() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.15 }}
+          <div
             className="rounded-3xl border-2 border-secondary/40 bg-secondary/5 p-8 relative"
           >
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-secondary text-white text-xs font-bold px-4 py-1 rounded-full">
@@ -83,14 +71,10 @@ export function Comparison() {
                 </li>
               ))}
             </ul>
-          </motion.div>
+          </div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3 }}
+        <div
           className="text-center mt-12"
         >
           <a
@@ -104,7 +88,7 @@ export function Comparison() {
             <Check size={20} />
           </a>
           <p className="text-muted-foreground text-sm mt-3">Asesoría gratuita · Sin compromiso</p>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

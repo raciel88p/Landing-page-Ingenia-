@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { motion, AnimatePresence } from "framer-motion";
-
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -82,41 +80,36 @@ export function Navbar() {
       </div>
 
       {/* Mobile Nav */}
-      <AnimatePresence>
-        {mobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white border-b border-border overflow-hidden"
-          >
-            <div className="px-4 py-6 space-y-4 flex flex-col">
-              {navLinks.map((link) => (
-                <a
-                  key={link.name}
-                  href={link.href}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="text-base font-medium text-foreground/80 hover:text-accent py-2"
-                >
-                  {link.name}
-                </a>
-              ))}
-              <div className="pt-4 border-t border-border">
-                <a
-                  id="cta-navbar-mobile"
-                  href="https://wa.me/50689437109?text=En%20Ingenia%20es%20un%20gusto%20atenderle."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="block w-full text-center px-6 py-3 rounded-md font-semibold bg-accent text-white shadow-lg shadow-accent/25"
-                >
-                  Cotización Gratis →
-                </a>
-              </div>
+      {mobileMenuOpen && (
+        <div
+          className="md:hidden bg-white border-b border-border overflow-hidden"
+        >
+          <div className="px-4 py-6 space-y-4 flex flex-col">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className="text-base font-medium text-foreground/80 hover:text-accent py-2"
+              >
+                {link.name}
+              </a>
+            ))}
+            <div className="pt-4 border-t border-border">
+              <a
+                id="cta-navbar-mobile"
+                href="https://wa.me/50689437109?text=En%20Ingenia%20es%20un%20gusto%20atenderle."
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="block w-full text-center px-6 py-3 rounded-md font-semibold bg-accent text-white shadow-lg shadow-accent/25"
+              >
+                Cotización Gratis →
+              </a>
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

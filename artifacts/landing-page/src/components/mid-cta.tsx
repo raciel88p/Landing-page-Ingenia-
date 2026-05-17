@@ -1,14 +1,10 @@
-import { motion } from "framer-motion";
 import { ArrowRight, MessageCircle } from "lucide-react";
 
 export function MidCTA() {
   return (
     <section className="py-16 bg-gradient-to-r from-primary to-primary/80 text-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+        <div
           className="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left"
         >
           <div>
@@ -38,7 +34,7 @@ export function MidCTA() {
               Ver precios
             </a>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
