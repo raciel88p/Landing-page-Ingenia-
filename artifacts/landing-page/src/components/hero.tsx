@@ -47,7 +47,7 @@ export function Hero() {
               className="w-full sm:w-auto px-8 py-4 rounded-md font-bold text-lg bg-white text-primary border-2 border-primary/20 hover:border-primary hover:bg-muted/50 transition-all duration-300 flex items-center justify-center gap-2"
             >
               <Search size={20} />
-              Cotizar por WhatsApp ahora
+              Quiero mis camisas ahora
             </a>
           </div>
         </div>
