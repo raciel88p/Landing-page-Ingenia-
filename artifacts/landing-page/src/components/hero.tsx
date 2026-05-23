@@ -35,6 +35,7 @@ export function Hero() {
               href="https://wa.me/50689437109?text=En%20Ingenia%20es%20un%20gusto%20atenderle."
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => { if (typeof window !== "undefined" && (window as any).gtag) { (window as any).gtag('config', 'AW-17972003812'); } }}
               className="w-full sm:w-auto px-8 py-4 rounded-md font-bold text-lg bg-accent text-white shadow-lg shadow-accent/30 hover:shadow-xl hover:shadow-accent/40 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group"
             >
               Recibir cotización en 24 horas
@@ -44,6 +45,7 @@ export function Hero() {
               href="https://wa.me/50689437109?text=En%20Ingenia%20es%20un%20gusto%20atenderle."
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => { if (typeof window !== "undefined" && (window as any).gtag) { (window as any).gtag('config', 'AW-17972003812'); } }}
               className="w-full sm:w-auto px-8 py-4 rounded-md font-bold text-lg bg-white text-primary border-2 border-primary/20 hover:border-primary hover:bg-muted/50 transition-all duration-300 flex items-center justify-center gap-2"
             >
               <Search size={20} />
