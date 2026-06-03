@@ -63,6 +63,8 @@ export function Navbar() {
               href="https://wa.me/50689437109?text=En%20Ingenia%20es%20un%20gusto%20atenderle."
               target="_blank"
               rel="noopener noreferrer"
+              data-cta-type="whatsapp"
+              data-conversion="lead"
               className="px-6 py-2.5 rounded-md font-semibold text-sm bg-accent text-white hover:bg-accent/90 hover:shadow-lg hover:shadow-accent/25 transition-all duration-300 hover:-translate-y-0.5"
             >
               Cotización Gratis →
@@ -101,6 +103,8 @@ export function Navbar() {
                 href="https://wa.me/50689437109?text=En%20Ingenia%20es%20un%20gusto%20atenderle."
                 target="_blank"
                 rel="noopener noreferrer"
+                data-cta-type="whatsapp"
+                data-conversion="lead"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block w-full text-center px-6 py-3 rounded-md font-semibold bg-accent text-white shadow-lg shadow-accent/25"
               >

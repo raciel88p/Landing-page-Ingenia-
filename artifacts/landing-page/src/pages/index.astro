@@ -16,7 +16,7 @@ import { FAQ } from '../components/faq.tsx';
 import { FinalCTA } from '../components/final-cta.tsx';
 import { Footer } from '../components/footer.tsx';
 import { Toaster } from '../components/ui/toaster.tsx';
-import { GoogleTagmanager } from '@digi4care/astro-google-tagmanager';
+import { GoogleTagmanager, GoogleTagmanagerNoscript } from '@digi4care/astro-google-tagmanager';
 import '../index.css';
 ---
 
@@ -169,6 +169,7 @@ import '../index.css';
     </style>
   </head>
   <body>
+    <GoogleTagmanagerNoscript id="GTM-KQQDG3LP" />
     <div id="root">
       <div class="min-h-screen bg-background text-foreground">
         <Navbar client:load />
