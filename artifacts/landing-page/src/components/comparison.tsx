@@ -82,6 +82,7 @@ export function Comparison() {
             target="_blank"
             rel="noopener noreferrer"
             id="cta-comparison"
+            onClick={() => { if (typeof window !== "undefined" && (window as any).gtag) { (window as any).gtag('config', 'AW-17972003812'); } }}
             className="inline-flex items-center gap-2 px-8 py-4 rounded-md font-bold text-lg bg-accent text-white shadow-lg shadow-accent/30 hover:shadow-xl hover:shadow-accent/40 hover:-translate-y-1 transition-all duration-300"
           >
             Ver precios para mi empresa

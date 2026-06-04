@@ -16,6 +16,7 @@ import { FAQ } from '../components/faq.tsx';
 import { FinalCTA } from '../components/final-cta.tsx';
 import { Footer } from '../components/footer.tsx';
 import { Toaster } from '../components/ui/toaster.tsx';
+import { CookieBanner } from '../components/cookie-banner.tsx';
 import { GoogleTagmanager } from '@digi4care/astro-google-tagmanager';
 import '../index.css';
 ---
@@ -191,6 +192,7 @@ import '../index.css';
         <WhatsAppButton client:load />
       </div>
       <Toaster client:load />
+      <CookieBanner client:load />
     </div>
   </body>
 </html>
