@@ -29,7 +29,8 @@ export function FinalCTA() {
               href={WA_FALLBACK}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => { if (typeof window !== "undefined" && (window as any).gtag) { (window as any).gtag('config', 'AW-17972003812'); } }}
+              data-cta-type="whatsapp"
+              data-conversion="lead"
               className="w-full py-4 rounded-lg font-bold text-lg bg-accent text-white shadow-lg hover:shadow-accent/40 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group mt-2"
             >
               <MessageCircle size={20} />
