@@ -21,6 +21,7 @@ export function WhatsAppButton() {
       data-cta-type="whatsapp"
       data-conversion="lead"
       aria-label="Contáctenos por WhatsApp"
+      onClick={() => { if (typeof window !== "undefined" && (window as any).gtag) { (window as any).gtag('config', 'AW-17972003812'); } }}
       className={`fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 rounded-full shadow-xl transition-all duration-300 ${
         visible
           ? "opacity-100 translate-y-0"
