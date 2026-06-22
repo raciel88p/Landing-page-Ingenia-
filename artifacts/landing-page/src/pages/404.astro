@@ -1,16 +1,64 @@
 ---
+import { Navbar } from '../components/navbar.tsx';
+import { Footer } from '../components/footer.tsx';
+import { WhatsAppButton } from '../components/whatsapp-button.tsx';
+import { Toaster } from '../components/ui/toaster.tsx';
+import { CookieBanner } from '../components/cookie-banner.tsx';
+import { GoogleTagmanager, GoogleTagmanagerNoscript } from '@digi4care/astro-google-tagmanager';
 import NotFoundComponent from '../components/not-found.tsx';
 import '../index.css';
 ---
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
   <head>
+    <GoogleTagmanager id="GTM-KQQDG3LP" />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
     <title>404: Página no encontrada | Ingenia</title>
+    <meta name="description" content="La página que busca no existe. Explore nuestros uniformes corporativos tipo Columbia en Ingenia." />
+    <meta name="robots" content="noindex, follow" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Preconnect para recursos externos -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+
+    <!-- Fuentes: carga no bloqueante (print trick) -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      />
+    </noscript>
+
+    <!-- Fuente por defecto mientras cargan (evita FOUT) -->
+    <style>
+      body { font-family: system-ui, -apple-system, sans-serif; }
+    </style>
   </head>
   <body>
-    <NotFoundComponent />
+    <GoogleTagmanagerNoscript id="GTM-KQQDG3LP" />
+    <div id="root">
+      <div class="min-h-screen bg-background text-foreground flex flex-col">
+        <Navbar client:load />
+        <main class="flex-grow flex items-center justify-center py-20">
+          <NotFoundComponent />
+        </main>
+        <Footer client:visible />
+        <WhatsAppButton client:load />
+      </div>
+      <Toaster client:load />
+      <CookieBanner client:load />
+    </div>
   </body>
 </html>
