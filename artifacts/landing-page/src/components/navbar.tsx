@@ -60,7 +60,7 @@ export function Navbar() {
           <div className="hidden md:flex">
             <a
               id="cta-navbar-desktop"
-              href="https://wa.me/50689437109?text=En%20Ingenia%20es%20un%20gusto%20atenderle."
+              href="https://wa.me/50689437109?text=Hola!%20Me%20gustaría%20cotizar%20uniformes%20personalizados%20para%20mi%20empresa."
               target="_blank"
               rel="noopener noreferrer"
               data-cta-type="whatsapp"
@@ -100,7 +100,7 @@ export function Navbar() {
             <div className="pt-4 border-t border-border">
               <a
                 id="cta-navbar-mobile"
-                href="https://wa.me/50689437109?text=En%20Ingenia%20es%20un%20gusto%20atenderle."
+                href="https://wa.me/50689437109?text=Hola!%20Me%20gustaría%20cotizar%20uniformes%20personalizados%20para%20mi%20empresa."
                 target="_blank"
                 rel="noopener noreferrer"
                 data-cta-type="whatsapp"

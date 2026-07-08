@@ -1,6 +1,6 @@
 import { ArrowRight, Clock, MessageCircle } from "lucide-react";
 
-const WA_FALLBACK = "https://wa.me/50689437109?text=En%20Ingenia%20es%20un%20gusto%20atenderle.";
+const WA_FALLBACK = "https://wa.me/50689437109?text=Hola!%20Me%20gustaría%20cotizar%20uniformes%20personalizados%20para%20mi%20empresa.";
 
 export function FinalCTA() {
   return (
@@ -34,7 +34,7 @@ export function FinalCTA() {
               className="w-full py-4 rounded-lg font-bold text-lg bg-accent text-white shadow-lg hover:shadow-accent/40 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group mt-2"
             >
               <MessageCircle size={20} />
-              Contactar por WhatsApp
+              Recibe tu cotización hoy mismo
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
             </a>
 

@@ -34,16 +34,22 @@ export function SocialProof() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {problems.map((problem, index) => (
-            <div
+            <a
               key={index}
-              className="p-8 rounded-2xl bg-muted/30 border border-border/50 text-center hover:shadow-lg transition-shadow duration-300"
+              href={`https://wa.me/50689437109?text=Hola!%20En%20mi%20empresa%20sufrimos%20el%20problema%20de%20${encodeURIComponent(problem.title)}.%20¿Cómo%20pueden%20ayudarnos?`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-8 rounded-2xl bg-muted/30 border border-border/50 text-center hover:shadow-lg hover:-translate-y-1 active:scale-[0.98] transition-all duration-300 group block"
             >
-              <div className="mx-auto w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center mb-6">
+              <div className="mx-auto w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 {problem.icon}
               </div>
               <h3 className="text-xl font-semibold mb-3 text-foreground">{problem.title}</h3>
-              <p className="text-muted-foreground">{problem.description}</p>
-            </div>
+              <p className="text-muted-foreground mb-4">{problem.description}</p>
+              <span className="text-destructive font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                Ver solución →
+              </span>
+            </a>
           ))}
         </div>
       </div>
