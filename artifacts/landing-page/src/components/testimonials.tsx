@@ -40,18 +40,24 @@ export function Testimonials() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {useCases.map((useCase, index) => (
-            <div
+            <a
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-md border border-border text-center hover:shadow-xl transition-all duration-300"
+              href={`https://wa.me/50689437109?text=Hola!%20Me%20interesa%20uniformes%20para%20el%20sector%20de%20${encodeURIComponent(useCase.title)}.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white rounded-2xl p-8 shadow-md border border-border text-center hover:shadow-xl hover:-translate-y-1 active:scale-[0.98] transition-all duration-300 group block"
             >
-              <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+              <div className="mx-auto w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                 {useCase.icon}
               </div>
               <h3 className="text-xl font-bold text-foreground mb-4">{useCase.title}</h3>
-              <p className="text-muted-foreground text-sm">
+              <p className="text-muted-foreground text-sm mb-4">
                 {useCase.description}
               </p>
-            </div>
+              <span className="text-primary font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                Más información →
+              </span>
+            </a>
           ))}
         </div>
       </div>

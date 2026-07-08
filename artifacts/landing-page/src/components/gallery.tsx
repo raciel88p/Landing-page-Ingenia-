@@ -42,10 +42,11 @@ export function Gallery() {
 
         <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
           {images.map((img, i) => (
-            <div
+            <button
               key={i}
-              className="break-inside-avoid cursor-pointer group relative overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300"
+              className="w-full break-inside-avoid cursor-pointer group relative overflow-hidden rounded-2xl shadow-md hover:shadow-xl active:scale-[0.98] transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-accent"
               onClick={() => setSelected(i)}
+              aria-label={`Ver imagen de ${img.label}`}
             >
               <img
                 src={`${import.meta.env.BASE_URL}images/${img.src}`}
@@ -55,11 +56,11 @@ export function Gallery() {
                 className="w-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/40 transition-colors duration-300 flex items-end p-3">
-                <span className="text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow">
+                <span className="text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow text-left">
                   {img.label}
                 </span>
               </div>
-            </div>
+            </button>
           ))}
         </div>
       </div>

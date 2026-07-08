@@ -46,9 +46,12 @@ export function Features() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
-            <div
+            <a
               key={index}
-              className="bg-white rounded-3xl p-8 border border-border shadow-lg shadow-black/5 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group"
+              href={`https://wa.me/50689437109?text=Hola!%20Me%20interesa%20saber%20más%20sobre%20${encodeURIComponent(feature.title)}.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white rounded-3xl p-8 border border-border shadow-lg shadow-black/5 hover:shadow-xl hover:-translate-y-2 active:scale-[0.98] transition-all duration-300 group block"
             >
               <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.color} flex items-center justify-center mb-6 shadow-md group-hover:scale-110 transition-transform duration-300`}>
                 {feature.icon}
@@ -57,7 +60,10 @@ export function Features() {
               <p className="text-muted-foreground leading-relaxed text-sm">
                 {feature.description}
               </p>
-            </div>
+              <div className="mt-6 text-accent font-semibold text-sm flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Consultar ahora →
+              </div>
+            </a>
           ))}
         </div>
       </div>

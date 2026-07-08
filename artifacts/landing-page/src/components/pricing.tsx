@@ -44,11 +44,14 @@ export function Pricing() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto items-stretch">
           {impacts.map((impact, index) => (
-            <div
+            <a
               key={index}
-              className="bg-muted/20 p-8 rounded-3xl border border-border text-center flex flex-col items-center justify-center h-full"
+              href={`https://wa.me/50689437109?text=Hola!%20Me%20interesa%20lograr%20mejorar%20la%20${encodeURIComponent(impact.value)}%20en%20mi%20empresa.`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-muted/20 p-8 rounded-3xl border border-border text-center flex flex-col items-center justify-center h-full hover:shadow-lg hover:-translate-y-1 active:scale-[0.98] transition-all duration-300 group block"
             >
-              <div className={`w-12 h-12 rounded-full mb-4 flex items-center justify-center ${impact.trend === 'up' ? 'bg-secondary/10 text-secondary' : 'bg-accent/10 text-accent'}`}>
+              <div className={`w-12 h-12 rounded-full mb-4 flex items-center justify-center group-hover:scale-110 transition-transform ${impact.trend === 'up' ? 'bg-secondary/10 text-secondary' : 'bg-accent/10 text-accent'}`}>
                 {impact.trend === 'up' ? <ArrowUpRight size={24} /> : <TrendingDown size={24} />}
               </div>
               <h3 className={`text-2xl font-bold mb-2 ${impact.color}`}>
@@ -57,7 +60,7 @@ export function Pricing() {
               <p className="text-sm font-medium text-muted-foreground">
                 {impact.label}
               </p>
-            </div>
+            </a>
           ))}
         </div>
       </div>

@@ -7,6 +7,11 @@ export function Hero() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
         <div>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 text-accent text-xs font-bold mb-6 border border-accent/20 animate-bounce">
+            <span className="flex">⭐⭐⭐⭐⭐</span>
+            <span>4.9/5 · +80 empresas confían en nosotros</span>
+          </div>
+
           <div className="flex flex-wrap gap-3 mb-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/10 text-secondary font-semibold text-sm border border-secondary/20">
               <MapPin size={16} />
@@ -32,19 +37,19 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <a
               id="cta-hero"
-              href="https://wa.me/50689437109?text=En%20Ingenia%20es%20un%20gusto%20atenderle."
+              href="https://wa.me/50689437109?text=Hola!%20Me%20gustaría%20cotizar%20uniformes%20personalizados%20para%20mi%20empresa."
               target="_blank"
               rel="noopener noreferrer"
               data-cta-type="whatsapp"
               data-conversion="lead"
               className="w-full sm:w-auto px-8 py-4 rounded-md font-bold text-lg bg-accent text-white shadow-lg shadow-accent/30 hover:shadow-xl hover:shadow-accent/40 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group"
             >
-              Recibir cotización en 24 horas
+              🚀 Cotiza tus uniformes en menos de 1 minuto
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
             </a>
             <a
               id="cta-hero-secondary"
-              href="https://wa.me/50689437109?text=En%20Ingenia%20es%20un%20gusto%20atenderle."
+              href="https://wa.me/50689437109?text=Hola!%20Me%20gustaría%20cotizar%20uniformes%20personalizados%20para%20mi%20empresa."
               target="_blank"
               rel="noopener noreferrer"
               data-cta-type="whatsapp"
@@ -52,7 +57,7 @@ export function Hero() {
               className="w-full sm:w-auto px-8 py-4 rounded-md font-bold text-lg bg-white text-primary border-2 border-primary/20 hover:border-primary hover:bg-muted/50 transition-all duration-300 flex items-center justify-center gap-2"
             >
               <Search size={20} />
-              Quiero mis camisas ahora
+              Solicita una cotización gratuita
             </a>
           </div>
         </div>
