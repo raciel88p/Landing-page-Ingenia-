@@ -48,7 +48,7 @@ export function Features() {
           {features.map((feature, index) => (
             <a
               key={index}
-              href={`https://wa.me/50689437109?text=Hola!%20Me%20interesa%20saber%20más%20sobre%20${encodeURIComponent(feature.title)}.`}
+              href="https://api.whatsapp.com/send/?phone=50689437109&text= Consulta!+desde+la página+web."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white rounded-3xl p-8 border border-border shadow-lg shadow-black/5 hover:shadow-xl hover:-translate-y-2 active:scale-[0.98] transition-all duration-300 group block"

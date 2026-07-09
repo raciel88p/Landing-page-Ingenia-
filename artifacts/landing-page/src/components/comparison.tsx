@@ -78,7 +78,7 @@ export function Comparison() {
           className="text-center mt-12"
         >
           <a
-            href="https://wa.me/50689437109?text=En%20Ingenia%20es%20un%20gusto%20atenderle."
+            href="https://api.whatsapp.com/send/?phone=50689437109&text= Consulta!+desde+la página+web."
             target="_blank"
             rel="noopener noreferrer"
             id="cta-comparison"

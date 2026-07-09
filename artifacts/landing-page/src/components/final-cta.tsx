@@ -1,6 +1,6 @@
 import { ArrowRight, Clock, MessageCircle } from "lucide-react";
 
-const WA_FALLBACK = "https://wa.me/50689437109?text=Hola!%20Me%20gustaría%20cotizar%20uniformes%20personalizados%20para%20mi%20empresa.";
+const WA_FALLBACK = "https://api.whatsapp.com/send/?phone=50689437109&text= Consulta!+desde+la página+web.";
 
 export function FinalCTA() {
   return (

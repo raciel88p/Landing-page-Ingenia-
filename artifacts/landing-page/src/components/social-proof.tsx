@@ -36,7 +36,7 @@ export function SocialProof() {
           {problems.map((problem, index) => (
             <a
               key={index}
-              href={`https://wa.me/50689437109?text=Hola!%20En%20mi%20empresa%20sufrimos%20el%20problema%20de%20${encodeURIComponent(problem.title)}.%20¿Cómo%20pueden%20ayudarnos?`}
+              href="https://api.whatsapp.com/send/?phone=50689437109&text= Consulta!+desde+la página+web."
               target="_blank"
               rel="noopener noreferrer"
               className="p-8 rounded-2xl bg-muted/30 border border-border/50 text-center hover:shadow-lg hover:-translate-y-1 active:scale-[0.98] transition-all duration-300 group block"
