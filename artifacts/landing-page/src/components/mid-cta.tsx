@@ -17,13 +17,12 @@ export function MidCTA() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 shrink-0">
             <a
-              id="cta-mid-page"
-              href="https://wa.me/50689437109?text=Hola!%20Me%20gustaría%20cotizar%20uniformes%20personalizados%20para%20mi%20empresa."
+              href="https://api.whatsapp.com/send/?phone=50689437109&text= Consulta!+desde+la página+web."
               target="_blank"
               rel="noopener noreferrer"
               data-cta-type="whatsapp"
               data-conversion="lead"
-              className="px-8 py-4 rounded-md font-bold text-base bg-accent text-white shadow-lg hover:shadow-accent/40 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group whitespace-nowrap"
+              className="cta-mid-page px-8 py-4 rounded-md font-bold text-base bg-accent text-white shadow-lg hover:shadow-accent/40 hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 group whitespace-nowrap"
             >
               <MessageCircle size={20} />
               Habla con un asesor por WhatsApp

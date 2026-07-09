@@ -46,7 +46,7 @@ export function Pricing() {
           {impacts.map((impact, index) => (
             <a
               key={index}
-              href={`https://wa.me/50689437109?text=Hola!%20Me%20interesa%20lograr%20mejorar%20la%20${encodeURIComponent(impact.value)}%20en%20mi%20empresa.`}
+              href="https://api.whatsapp.com/send/?phone=50689437109&text= Consulta!+desde+la página+web."
               target="_blank"
               rel="noopener noreferrer"
               className="bg-muted/20 p-8 rounded-3xl border border-border text-center flex flex-col items-center justify-center h-full hover:shadow-lg hover:-translate-y-1 active:scale-[0.98] transition-all duration-300 group block"

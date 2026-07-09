@@ -37,7 +37,7 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <a
               id="cta-hero"
-              href="https://wa.me/50689437109?text=Hola!%20Me%20gustaría%20cotizar%20uniformes%20personalizados%20para%20mi%20empresa."
+              href="https://api.whatsapp.com/send/?phone=50689437109&text= Consulta!+desde+la página+web."
               target="_blank"
               rel="noopener noreferrer"
               data-cta-type="whatsapp"
@@ -49,7 +49,7 @@ export function Hero() {
             </a>
             <a
               id="cta-hero-secondary"
-              href="https://wa.me/50689437109?text=Hola!%20Me%20gustaría%20cotizar%20uniformes%20personalizados%20para%20mi%20empresa."
+              href="https://api.whatsapp.com/send/?phone=50689437109&text= Consulta!+desde+la página+web."
               target="_blank"
               rel="noopener noreferrer"
               data-cta-type="whatsapp"

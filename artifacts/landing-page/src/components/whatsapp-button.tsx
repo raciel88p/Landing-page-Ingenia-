@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const WA_URL =
-  "https://wa.me/50689437109?text=Hola!%20Me%20gustaría%20cotizar%20uniformes%20personalizados%20para%20mi%20empresa.";
+  "https://api.whatsapp.com/send/?phone=50689437109&text= Consulta!+desde+la página+web.";
 
 export function WhatsAppButton() {
   const [visible, setVisible] = useState(false);
