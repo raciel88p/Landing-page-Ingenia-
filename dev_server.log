@@ -1,0 +1,15 @@
+
+> @workspace/landing-page@0.0.0 dev /app/artifacts/landing-page
+> astro dev --host 0.0.0.0
+
+[vite] connected.
+23:54:36 [types] Generated 1ms
+23:54:36 [vite] Re-optimizing dependencies because vite config has changed
+23:54:36 [vite] Port 4321 is in use, trying another one...
+23:54:36 [vite] Port 4322 is in use, trying another one...
+ astro  v6.3.1 ready in 2717 ms
+┃ Local    http://localhost:4323/
+┃ Network  http://192.168.0.2:4323/
+23:54:36 watching for file changes...
+23:55:05 [200] / 202ms
+23:55:36 [200] / 33ms

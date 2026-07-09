@@ -61,7 +61,7 @@ export function Footer() {
         
         <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Ingenia. Todos los derechos reservados.
+            © {new Date().getFullYear()} Ingenia. Todos los derechos reservados. | página realizada por <a href="https://www.robertoperezsalazar.com/" target="_blank" rel="noopener noreferrer" className="hover:text-accent font-medium">www.robertoperezsalazar.com</a> especialista en posicionamiento SEO
           </p>
         </div>
       </div>
